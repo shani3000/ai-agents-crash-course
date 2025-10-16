@@ -66,6 +66,7 @@ exa_search_mcp = MCPServerStreamableHttp(
     cache_tools_list=True,
     max_retry_attempts=1,
 )
+exa_search_mcp.connect()
 
 # 1st Agent: Our "Calorie Agent"
 calorie_agent_with_search = Agent(
